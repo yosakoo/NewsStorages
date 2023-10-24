@@ -31,6 +31,7 @@ public class KafkaDataReceiverImpl implements KafkaDataReceiver {
                 .subscribe(r -> {
                     News news = gson
                             .fromJson(r.value().toString(), News.class);
+                    System.out.println(news.toString());
                     kafkaDataService.handle(news);
                     r.receiverOffset().acknowledge();
                 });

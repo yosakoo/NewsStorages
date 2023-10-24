@@ -14,6 +14,6 @@ spring:
     change-log: classpath:liquibase/db.changelog.yaml
     enabled: true
 server:
-  port: 8082
+  port: 8083
 
 topics: ${KAFKA_SUBSCRIBED_TOPICS}

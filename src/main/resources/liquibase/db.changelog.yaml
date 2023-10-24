@@ -2,3 +2,5 @@ databaseChangeLog:
   - includeAll:
       path: /changesets
       relativeToChangelogFile: true
+
+  - include file: /path/to/002_additional_changes.sql

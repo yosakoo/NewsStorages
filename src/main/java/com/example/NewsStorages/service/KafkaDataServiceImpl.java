@@ -18,7 +18,7 @@ public class KafkaDataServiceImpl implements KafkaDataService {
 
     @Override
     public void handle(News news) {
-        log.info("Data object {} was saved", news.toString());
+        log.info("ADSSSSSSSSSSSSSSSSSS {}", news.toString());
         newsRepository.save(news);
     }
 
